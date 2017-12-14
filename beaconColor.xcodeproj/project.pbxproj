@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123D3AB81FD9F439002EBDB4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120547551FD9F12D008D901B /* CoreLocation.framework */; };
 		12F1C97D1FD443040089FB39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1C97C1FD443040089FB39 /* AppDelegate.swift */; };
 		12F1C97F1FD443040089FB39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1C97E1FD443040089FB39 /* ViewController.swift */; };
 		12F1C9821FD443040089FB39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F1C9801FD443040089FB39 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120547551FD9F12D008D901B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		12F1C9791FD443040089FB39 /* beaconColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beaconColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F1C97C1FD443040089FB39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F1C97E1FD443040089FB39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123D3AB81FD9F439002EBDB4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		120547541FD9F12C008D901B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				120547551FD9F12D008D901B /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		12F1C9701FD443040089FB39 = {
 			isa = PBXGroup;
 			children = (
 				12F1C97B1FD443040089FB39 /* beaconColor */,
 				12F1C97A1FD443040089FB39 /* Products */,
+				120547541FD9F12C008D901B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +109,11 @@
 					12F1C9781FD443040089FB39 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -275,7 +292,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DM8EN75KT3;
 				INFOPLIST_FILE = beaconColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.udemy1.beaconColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +308,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DM8EN75KT3;
 				INFOPLIST_FILE = beaconColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.udemy1.beaconColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
